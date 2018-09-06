@@ -1,0 +1,208 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #340040;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+    font-size: 4.8rem;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+aside {
+    align-self: flex-start;
+    flex-basis: 20%;
+}
+
+section {
+    flex-basis: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+footer {
+    align-self: flex-end;
+    flex-basis: 100%;
+    margin-top: 0.8rem;
+}
+
+button {
+    align-self: auto;
+    flex-basis: 10%;
+    margin-top: 0.8rem;
+}
+
+
+.end {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+header {
+    color: #05F26C;
+    letter-spacing: 2px;
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+h1,
+h2,
+h3 {
+    font-size: 4.8rem;
+    margin: 0;
+}
+
+h2 {
+    text-transform: none;
+}
+
+h3 {
+    color: #07F2F2;
+}
+
+.player {
+    color: #07F2F2;
+}
+
+#score1,
+#score2 {
+    font-size: 1.6rem;
+}
+
+#turns {
+    font-size: 1.6rem;
+    color: #07F2F2;
+}
+
+.start {
+    flex-basis: 30%;
+    margin-top: 10rem;
+    color: #07F2F2;
+
+}
+
+.end {
+    flex-basis: 100%;
+    margin-top: 10rem;
+    color: #07F2F2;
+}
+
+#P1,
+#P2 {
+    border: 0.3rem solid #07F2F2;
+    margin-top: 0.8rem;
+    margin-bottom: 3rem;
+}
+
+#P1:hover,
+#P2:hover {
+    color: #F2055C;
+    border: 0.3rem solid #F2055C;
+    cursor: pointer;
+}
+
+#score {
+    color: #EAF205;
+    border-bottom: 0.4rem solid #EAF205;
+}
+
+#again {
+    border: 0.3rem solid #07F2F2;
+    width: 50%;
+    margin-top: 3rem;
+}
+
+#again:hover {
+    color: #F2055C;
+    border: 0.3rem solid #F2055C;
+    cursor: pointer;
+}
+
+
+.card,
+.cardActive {
+    background-image: url(img/cover.png);
+    background-size: contain;
+    height: 10rem;
+    width: 10rem;
+    margin: 0.8rem;
+    border: 0.4rem solid #F2055C;
+    border-radius: 3rem;
+    transition: all .4s ease-in-out;
+    opacity: 100%;
+}
+
+.card:hover {
+    cursor: pointer;
+    border: 0.4rem solid #07F2F2;
+    transform: scale(1.05);
+}
+
+.cardActive {
+    border: 0.4rem solid #EAF205;
+}
+
+.cardHidden {
+    background-image: url(img/cover.png);
+}
+
+.hidden {
+    display: none;
+}
+
+.hiddenAside {
+    visibility: hidden;
+}
+
+.activePlayer {
+    color: #EAF205;
+    border-bottom: 0.4rem solid #EAF205;
+}
+
+.home {
+    text-decoration: none;
+    background-color: transparent;
+    color: #07F2F2;
+    border: none;
+    font-size: 1.6rem;
+    transition: all .2s ease-in-out;
+}
+
+.home:hover {
+    cursor: pointer;
+    color: #EAF205;
+    transform: scale(1.05);
+}
+
+.home:active {
+    border: none;
+    outline: none;
+}
+
+/*
+pinky #F2055C;
+viol #340040
+bluee #07F2F2
+gren #05F26C
+yelow #EAF205
+*/
