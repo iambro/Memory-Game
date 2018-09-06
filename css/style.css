@@ -10,48 +10,82 @@ body {
     overflow: hidden;
     text-align: center;
     font-size: 4.8rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
 
 }
 
 main {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -ms-flex-flow: wrap;
     flex-flow: wrap;
 }
 
 aside {
+    -ms-flex-item-align: start;
     align-self: flex-start;
+    -ms-flex-preferred-size: 20%;
     flex-basis: 20%;
 }
 
 section {
+    -ms-flex-preferred-size: 60%;
     flex-basis: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
 }
 
 footer {
+    -ms-flex-item-align: end;
     align-self: flex-end;
+    -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     margin-top: 0.8rem;
 }
 
 button {
+    -ms-flex-item-align: auto;
     align-self: auto;
+    -ms-flex-preferred-size: 10%;
     flex-basis: 10%;
     margin-top: 0.8rem;
 }
 
 
 .end {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -95,6 +129,7 @@ h3 {
 }
 
 .start {
+    -ms-flex-preferred-size: 30%;
     flex-basis: 30%;
     margin-top: 10rem;
     color: #07F2F2;
@@ -102,6 +137,7 @@ h3 {
 }
 
 .end {
+    -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     margin-top: 10rem;
     color: #07F2F2;
@@ -148,6 +184,7 @@ h3 {
     margin: 0.8rem;
     border: 0.4rem solid #F2055C;
     border-radius: 3rem;
+    -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
     opacity: 100%;
 }
@@ -155,6 +192,7 @@ h3 {
 .card:hover {
     cursor: pointer;
     border: 0.4rem solid #07F2F2;
+    -webkit-transform: scale(1.05);
     transform: scale(1.05);
 }
 
@@ -185,12 +223,14 @@ h3 {
     color: #07F2F2;
     border: none;
     font-size: 1.6rem;
+    -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
 
 .home:hover {
     cursor: pointer;
     color: #EAF205;
+    -webkit-transform: scale(1.05);
     transform: scale(1.05);
 }
 
